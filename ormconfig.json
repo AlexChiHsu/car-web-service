@@ -1,0 +1,14 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3307,
+  "username": "alex",
+  "password": "password",
+  "database": "cardatabase",
+  "entities": ["dist/**/entities/*{.ts,.js}"],
+  "synchronize": true,
+  "migrations": ["src/migrations/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "src/migrations"
+  }
+}

@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Car {
+  id: String!
+  name: String!
+  dailyPrice: Float!
+  monthlyPrice: Float!
+  mileage: String!
+  gas: String!
+  gearType: String!
+  thumbnailUrl: String!
+}
+
+type Query {
+  cars: [Car!]!
+}
+
+type Mutation {
+  addNewCar(newCarData: NewCarInput!): Car!
+}
+
+input NewCarInput {
+  name: String!
+  dailyPrice: Int!
+  monthlyPrice: Int!
+  mileage: String!
+  gas: String!
+  gearType: String!
+  thumbnailUrl: String!
+}

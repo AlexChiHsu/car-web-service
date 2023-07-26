@@ -8,7 +8,6 @@ import { DataSource } from 'typeorm';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
-        // name: configService.get('NODE_ENV'),
         type: 'mysql',
         host: '127.0.0.1',
         port: 3306,

@@ -9,14 +9,14 @@ import { DataSource } from 'typeorm';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         type: 'mysql',
-        host: '127.0.0.1',
+        host: 'mysqldb',
         port: 3306,
         username: configService.get('DB_USER'),
         password: configService.get('DB_PASS'),
         database: configService.get('DB_NAME'),
         entities: ['dist/**/entities/*{.ts,.js}'],
         synchronize: true,
-        migrations: [__dirname + 'src/migrations/*{.ts,.js}'],
+        migrations: ['dist/migrations/*{.ts,.js}'],
         cli: {
           migrationsDir: 'src/migrations',
         },

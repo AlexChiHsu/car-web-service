@@ -2,7 +2,7 @@
   {
     "name": "dev",
     "type": "mysql",
-    "host": "127.0.0.1",
+    "host": "mysqldb",
     "port": 3306,
     "username": "alex",
     "password": "password",
@@ -17,10 +17,10 @@
   {
     "name": "prod",
     "type": "mysql",
-    "host": "127.0.0.1",
+    "host": "mysqldb",
     "port": 3306,
     "username": "alex",
-    "password": "password1234",
+    "password": "password",
     "database": "cardatabase",
     "entities": ["dist/**/entities/*{.ts,.js}"],
     "synchronize": true,
